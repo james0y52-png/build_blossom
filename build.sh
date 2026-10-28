@@ -9,7 +9,7 @@ rm -rf TMP_PATCHES
 sudo apt update 
 sudo apt install patchelf -y 
 repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs --depth=1
-git clone https://github.com/james0y52-pnglocal_manifest_blossom -b A16-QP2 .repo/local_manifests
+git clone https://github.com/james0y52-png/local_manifest_blossom -b A16-QP2 .repo/local_manifests
 repo sync -c -j32 --force-sync --no-clone-bundle --no-tags
 /opt/crave/resync.sh
 . build/envsetup.sh
